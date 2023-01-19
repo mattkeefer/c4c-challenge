@@ -38,5 +38,5 @@ The frontend queries the backend endpoint to retrieve all of the posted messages
 2. Open the folder in IntelliJ and navigate to `src/main/java/com/c4c/challenge/ChallengeApplication.java`
 3. Run the main method to start the backend at `localhost:8080`
 4. Open a terminal with `npm` installed and navigate to `app/` from the repository root using `cd app`
-5. Run the command `npm start` to start the frontend at `localhost:3000`, a browser window should open automatically
+5. Run the command `npm start` to start the frontend at `localhost:3000`, a browser window should open automatically. If there is an error try running `npm i` and then `npm start` again
 6. Enjoy!
