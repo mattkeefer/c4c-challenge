@@ -15,7 +15,7 @@ The frontend queries the backend endpoint to retrieve all of the posted messages
 ## Components
 ### Backend
 - PostController: this class provides the REST endpoints used by the frontend to both `retrieve all posts` and also `create a new post` and save it to the database using `PostRepository`.
-- PostRepository: this interface implements the JpaRepository interface and stores objects of type `Post` with an id of type Long.
+- PostRepository: this interface implements the JpaRepository interface and stores objects of type `Post` with an id of type Long. The file used for the database storage is located at `data/message-data.mv.db`
 - Post: this class represents a post on the message board. It has an auto-generated `postId` field, a `message` field containing the contents of the post, and a `timestamp` field describing when the post was created.
 - ValidMessageConstraint: provides an annotation interface to validate the `message` field using the `MessageValidator` class.
 - MessageValidator: this class contains the `isValid()` method which will ensure a `message` string is not null and has a length > 0 and <= 128.
